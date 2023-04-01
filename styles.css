@@ -57,9 +57,22 @@ a {
   font-weight: 800 !important;
 }
 
-.testimony {
- width: 200px;
- display: grid;
- grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
- grid-gap: 16px
+.depoimentos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* define 3 colunas */
+    grid-gap: 16px; /* espaço entre as imagens */
+  }
+  .depoimentos img {
+    max-width:100%; 
+    height: auto; 
+  }
+
+.intagram{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* define 3 colunas */
+  grid-gap: 16px; /* espaço entre as imagens */
+}
+.intagram img {
+  max-width:100%; 
+  height: auto; 
 }
