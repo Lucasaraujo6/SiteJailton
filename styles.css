@@ -4,11 +4,9 @@
 }
 
 body {
-  width: fit-content;
   display: block;
   background-color: rgb(144, 220, 255);
   justify-content: center;
-  /* flex-shrink: 0; */
 }
 .video-container {
   display: flex;
@@ -95,8 +93,8 @@ a {
 
 @media screen and (min-width: 000px) and (max-width: 480px) {
   /* .body {
-    width: 480px;
-    overflow: hidden;
+    width: 100%;
+    max-width: 480px;
   } */
   .testimonies-container {
     grid-template-columns: repeat(1, 400px);
