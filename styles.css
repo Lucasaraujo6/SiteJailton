@@ -19,19 +19,22 @@ body {
   width: 100%;
 }
 
+h2,
+h3,
+p {
+  padding: 0 5%;
+}
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
-
-
-.whatsapp-button {
+.whatsapp-button,
+.instagram-button {
   display: flex;
   margin: auto;
-  /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
   background-color: #000000;
-
   border-radius: 20px;
   width: fit-content;
   height: 50px;
@@ -44,15 +47,22 @@ a {
   color: #00b819;
   text-transform: uppercase;
 }
-
-
+.instagram-button {
+  margin-top: 20px;
+  background: rgb(213, 43, 233);
+  color: rgb(255, 228, 4);
+}
 
 .whatsapp-button:hover {
-  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   background-color: #00b819;
-
-  border-width: 2px 2px 2px 2px;
+  color: #000000;
   box-shadow: 1px 1px 15px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.instagram-button:hover {
+  box-shadow: 1px 1px 15px 10px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
@@ -97,25 +107,20 @@ a {
   flex-direction: column;
   width: fit-content;
 }
+.ig-link:hover img {
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+}
 .ig-image {
   height: 200px;
   width: 200px;
 }
-.instagram-button {
-  display: flex;
-  margin: 20px auto;
-  /* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); */
-  background: rgb(213, 43, 233);
-  color: rgb(255, 228, 4);
-  border-radius: 20px;
-  width: fit-content;
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  padding: 0 20px;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+
+.play-button {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  top: 50%;
+  left: 50%;
 }
 
 @media screen and (min-width: 000px) and (max-width: 480px) {
