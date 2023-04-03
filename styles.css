@@ -2,9 +2,13 @@
 * {
   font-family: "Libre Baskerville", serif;
 }
+
 body {
-  display: flex;
+  width: fit-content;
+  display: block;
+  background-color: rgb(144, 220, 255);
   justify-content: center;
+  flex-shrink: 0;
 }
 .spacer {
   height: 50px;
@@ -18,7 +22,7 @@ body {
 
 a {
   text-decoration: none;
-  color:inherit;
+  color: inherit;
 }
 
 .whatsapp-button {
@@ -37,11 +41,11 @@ a {
   padding: 0 20px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
 }
-.whatsapp-button a{
+
+.whatsapp-button a {
   color: #00b819;
+  text-transform: uppercase;
 }
-
-
 
 .whatsapp-button:hover {
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
@@ -55,4 +59,39 @@ a {
 .button-text {
   font-size: 15px;
   font-weight: 800 !important;
+}
+
+.depoiments {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonies-container {
+  margin: auto;
+  display: grid;
+  grid-gap: 60px 30px;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  width: 100%;
+}
+.testimony-container {
+  display: flex;
+  height: 100%;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.testimonies-container img {
+  border-radius: 10px;
+  max-width: 400px;
+}
+
+@media screen and (min-width: 000px) and (max-width: 480px) {
+  /* .body {
+    width: 480px;
+  } */
+  .testimonies-container {
+    grid-template-columns: repeat(1, 400px);
+  }
 }
