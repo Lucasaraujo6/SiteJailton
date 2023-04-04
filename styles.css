@@ -81,7 +81,7 @@ a {
   flex-direction: column;
   justify-content: center;
 }
-
+/* 
 .testimonies-container {
   margin: auto;
   display: grid;
@@ -99,7 +99,7 @@ a {
 .testimonies-container img {
   border-radius: 10px;
   max-width: 400px;
-}
+} */
 .instagram-container {
   display: flex;
   flex-direction: row;
@@ -127,6 +127,17 @@ a {
   left: 50%;
 }
 
+.carousel-inner {
+  display: flex;
+  height: 713px;
+  text-align: center;
+  align-items: center;
+}
+.carousel-item img {
+  max-width: 400px;
+  border-radius: 10px;
+  margin: auto;
+}
 @media screen and (min-width: 000px) and (max-width: 480px) {
   .testimonies-container {
     grid-template-columns: repeat(1, 400px);
