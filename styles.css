@@ -157,3 +157,21 @@ a {
     margin-bottom: 10px;
   }
 }
+
+.imgs_demostração {
+	display: flex;
+	height: 20rem;
+	gap: 5px;
+}
+.foto {
+	flex: 1;
+	border-radius: 1rem;
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: all .8s cubic-bezier (.25, .4, .45, 1.4);
+}
+
+.foto:hover {
+	flex: 5;
+}
